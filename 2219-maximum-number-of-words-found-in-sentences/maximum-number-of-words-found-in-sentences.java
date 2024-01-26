@@ -21,9 +21,10 @@ class Solution {
             }
             
         }
-        if(count+1>max)
+        int k = count+1;
+        if(k>max)
         {
-            max=count+1;
+            max=k;
         }
         // System.out.print(count);
         }
