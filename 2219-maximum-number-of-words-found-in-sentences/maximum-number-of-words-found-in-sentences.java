@@ -7,10 +7,12 @@ class Solution {
             // System.out.print(sentences[i].length());
             String arr[]= sentences[i].split("[ ]");
             int len = arr.length;
-            if(len>max)
-            {
-                max=len;
-            }
+            // if(len>max)
+            // {
+            //     max=len;
+            // }
+
+            max=Math.max(max,len);
         }
 
     
