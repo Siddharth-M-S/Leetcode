@@ -5,13 +5,29 @@ class Solution {
         {
             // System.out.println(sentences[i]);
             // System.out.print(sentences[i].length());
-            String arr[]= sentences[i].split("[ ]");
-            int len = arr.length;
-            if(len>max)
+        //     String arr[]= sentences[i].split("[ ]");
+        //     int len = arr.length;
+        //     if(len>max)
+        //     {
+        //         max=len;
+        //     }
+        // }
+        int count =0;
+        for(int j =0;j<sentences[i].length();j++)
+        {
+            if(sentences[i].charAt(j)==' ')
             {
-                max=len;
+                count++;
             }
+            
         }
+        if(count+1>max)
+        {
+            max=count+1;
+        }
+        // System.out.print(count);
+        }
+
         return max;
     }
 }
