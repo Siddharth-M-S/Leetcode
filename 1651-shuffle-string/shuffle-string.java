@@ -1,6 +1,6 @@
 class Solution {
     public String restoreString(String s, int[] indices) {
-        Character arr[]=new Character [indices.length];
+        char arr[]=new char [indices.length];
         String res = "";
         for(int i=0;i<indices.length;i++)
         {
@@ -9,11 +9,12 @@ class Solution {
             
 
         }
-        for(Character k : arr)
-        {
-            res+=(Character.toString(k));
-        }
-        return res;
+        // for(Character k : arr)
+        // {
+        //     res+=(Character.toString(k));
+        // }
+        // return res;
+        return new String(arr);
         // System.out.print(arr[0]);
         // return "hi";
         
