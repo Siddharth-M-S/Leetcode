@@ -8,47 +8,52 @@ class Solution {
 
             if(s.charAt(i)=='L')
             {
-                int k = arr[1]-1;
-                if(k>=0)
-                {
+                // int k = arr[1]-1;
+                // if(k>=0)
+                // {
                     arr[1]=arr[1]-1;
-                    count++;
-                }
-                else break;
+                //     count++;
+                // }
+                // else break;
 
             }
          else   if(s.charAt(i)=='R')
             {
-                int k = arr[1]+1;
+            //     int k = arr[1]+1;
                 
-                if(k<n)
-                {
+            //     if(k<n)
+            //     {
                     arr[1]+=1;
                  
-                    count++;
-                }
-                else break;
+                //     count++;
+                // }
+                // else break;
             }
             else if(s.charAt(i)=='U')
             {
-                int k = arr[0]-1;
-                if(k>=0)
-                {
+                // int k = arr[0]-1;
+                // if(k>=0)
+                // {
                     arr[0]-=1;
-                    count++;
-                }
-                else break;
+                //     count++;
+                // }
+                // else break;
             }
            else if(s.charAt(i)=='D')
             {
-                int k = arr[0]+1;
-                if(k<n)
-                {
+                // int k = arr[0]+1;
+                // if(k<n)
+                // {
                     arr[0]+=1;
-                    count++;
-                }
-                else break;
+                //     count++;
+                // }
+                // else break;
             }
+            if(arr[0]>=0 && arr[0]<n && arr[1]>=0 && arr[1]<n)
+            {
+                count++;
+            }
+            else break;
         }
         return count;
     }
