@@ -9,12 +9,9 @@ class Solution {
         System.out.println(l);
         int size = map.size();
         for(int n : l){
-            if(n < k){
+            if(n <= k){
                 size --;
                 k-=n;
-            }else if(k == n){
-                k-=n;
-                size--;
             }
             else{
                 break;
