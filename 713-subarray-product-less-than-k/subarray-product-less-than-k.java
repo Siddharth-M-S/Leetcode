@@ -1,7 +1,7 @@
 class Solution {
     public int numSubarrayProductLessThanK(int[] nums, int k) {
         if (k <= 1) {
-            return 0; // Handle cases where k is 0 or 1 (no subarrays possible)
+            return 0; 
         }
 
         int count = 0;
@@ -16,7 +16,7 @@ class Solution {
                 left++;
             }
 
-            count += right - left + 1; // Count all valid subarrays ending at 'right'
+            count += right - left + 1; 
         }
 
         return count;
